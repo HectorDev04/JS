@@ -2,18 +2,21 @@
     --main-font: "Roboto Condensed";
 }
 
-body {
-    font-family: var(--main-font);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+body {
+    font-family: var(--main-font);
+}
+
+
 .title {
-    text-align: center;
+    margin: 0 15px;
+    text-align: left;
 }
 
 .nav_header {
@@ -47,4 +50,14 @@ body {
 
 .a_item:hover {
     color: rgb(156, 153, 153);
+}
+
+#home {
+    text-align: center;
+    padding: 50px;
+    margin: 14px;
+}
+
+.p_home {
+    max-width: 100%;
 }
