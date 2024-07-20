@@ -2,40 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My web</title>
 </head>
 
 <body>
-    <header>
-        <h1>My web</h1>
-        <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#">about</a></li>
+    <header class="nav_header">
+        <h1 class="title">My web</h1>
+        <nav class="nav_bg">
+            <ul class="ul_d">
+                <li class="list_item"><a class="a_item" href="#home">home</a></li>
+                <li class="list_item"><a class="a_item" href="#about">about</a></li>
+                <li class="list_item"><a class="a_item" href="#contact">contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="home">
+            <h2>Welcome to my website</h2>
+            <p></p>
+        </section>
+
+        <section id="about">
+            <h2>About me</h2>
+            <article>
+                <header>
+                    <h3>My history</h3>
+                </header>
+                <p>
+                    My name is hectordev, I'm software developer, i like to create
+                    websites.
+                </p>
+            </article>
 
             <article>
-                <h2>Main content of the first article of the firts section</h2>
-                <img src="" alt="first image of the firts article of the first section">
+                <header>
+                    <h3>My hobbies</h3>
+                </header>
+                <ul>
+                    <li>I love programming</li>
+                    <li>Reading</li>
+                    <li>Senderism</li>
+                </ul>
             </article>
         </section>
 
-        <section>
-            <article>
-                <h2>Main content of the first article of the second section</h2>
-                <img src="" alt="first image of the first article of the second section">
-            </article>
+        <section id="contact">
+            <form action="/submit-form" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form_group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+
+                    <div class="form_group">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form_group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" />
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message</legend>
+
+                    <div class="form_group">
+                        <label for="subject">Affair:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form_group">
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </div>
+
+            </form>
         </section>
     </main>
+    <aside>
+        <h2>Recent news</h2>
+        <!-- Insert news -->
+    </aside>
     <footer>
-        <p>All rights reserved</p>
+        <p>&copy; 2024 All rights reserved</p>
     </footer>
 </body>
 

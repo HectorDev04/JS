@@ -1,0 +1,50 @@
+:root {
+    --main-font: "Roboto Condensed";
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+}
+
+.nav_header {
+    background-color: rgb(39, 37, 37);
+    color: white;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav_bg {
+    display: flex;
+}
+
+.ul_d {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.list_item {
+    margin: 0 10px;
+}
+
+.a_item {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.a_item:hover {
+    color: rgb(156, 153, 153);
+}
